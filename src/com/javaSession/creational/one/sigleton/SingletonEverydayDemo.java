@@ -1,0 +1,21 @@
+package com.javaSession.creational.one.sigleton;
+
+public class SingletonEverydayDemo {
+	public static void main (String args[])
+	{
+		// Runtime either have no constructors or private constructors
+		
+		Runtime singletonRuntime = Runtime.getRuntime();
+		singletonRuntime.gc();
+		System.out.println(singletonRuntime);
+		
+		Runtime anotherInstance =Runtime.getRuntime();
+		System.out.println(anotherInstance);
+		
+		if(singletonRuntime==anotherInstance)
+		{
+			System.out.println(" They are the same instance.");
+		}
+	}
+
+}

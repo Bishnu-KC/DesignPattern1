@@ -1,0 +1,4 @@
+ singleton Design Pattern
+ 	1. Only one instance should created
+ 	2. guarantee of control of the resource ( Object)
+ 	3. lazly loading
